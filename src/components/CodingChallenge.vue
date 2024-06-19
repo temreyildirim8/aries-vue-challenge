@@ -77,7 +77,7 @@ export default {
         const curr = results[i];
         if (prev.profitLoss * curr.profitLoss < 0) {
           const breakEven = prev.strike_price + (curr.strike_price - prev.strike_price) * (0 - prev.profitLoss) / (curr.profitLoss - prev.profitLoss);
-          breakEvenPoints.push(breakEven);
+          breakEvenPoints.push(breakEven.toFixed(2));
         }
       }
 
