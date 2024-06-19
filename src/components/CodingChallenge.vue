@@ -136,4 +136,14 @@ canvas {
 .results {
   margin-top: 20px;
 }
+
+@media (max-width: 600px) {
+  .chart-container {
+    padding: 0 5px;
+  }
+
+  canvas {
+    height: 400px !important;
+  }
+}
 </style>
